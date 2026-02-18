@@ -44,6 +44,8 @@ body {
   min-height: 100vh;
 }
 
+main { background: var(--bg); }
+
 a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
 a:hover { color: var(--orange); }
 img { max-width: 100%; display: block; }
@@ -403,7 +405,6 @@ nav {
   align-items: flex-end;
   padding: 2.5rem 3rem;
   background: var(--panel);
-  border-bottom: 3px solid var(--dark);
   border-top: 4px solid var(--accent);
   overflow: hidden;
 }
@@ -555,7 +556,7 @@ nav {
   text-transform: uppercase;
   color: var(--muted);
   display: grid;
-  grid-template-columns: 50px 1fr 100px 80px;
+  grid-template-columns: 50px 1fr 60px auto;
   padding: 0.75rem 1.5rem;
   border-bottom: 2px solid var(--dark);
   background: var(--panel);
@@ -563,7 +564,7 @@ nav {
 
 .track-row {
   display: grid;
-  grid-template-columns: 50px 1fr 100px 80px;
+  grid-template-columns: 50px 1fr 60px auto;
   padding: 0.9rem 1.5rem;
   border-bottom: 1px solid var(--border);
   transition: background 0.15s;
@@ -588,6 +589,10 @@ nav {
   font-weight: 700;
   font-size: 0.95rem;
   color: var(--black);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .track-info .track-subtitle {
@@ -615,11 +620,14 @@ nav {
   text-transform: uppercase;
   color: var(--dark);
   border: 1px solid var(--dark);
-  padding: 0.25rem 0.55rem;
+  padding: 0.25rem 0.6rem;
   transition: all 0.2s;
   white-space: nowrap;
   text-decoration: none;
   text-align: center;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
 }
 .track-link:hover {
   background: var(--dark);
@@ -967,8 +975,8 @@ nav {
 
 /* ── FOOTER ── */
 footer {
-  background: var(--dark);
-  border-top: 3px solid var(--accent);
+  background: var(--panel);
+  border-top: 4px solid var(--accent);
   padding: 3rem 2.5rem;
   text-align: center;
 }
@@ -985,10 +993,11 @@ footer {
   font-size: 0.55rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.5);
-  border: 1px solid rgba(255,255,255,0.2);
+  color: var(--dark);
+  border: 1.5px solid var(--dark);
   padding: 0.3rem 0.75rem;
   text-decoration: none;
+  border-radius: 3px;
   transition: all 0.2s;
 }
 .footer-platform:hover { color: var(--accent); border-color: var(--accent); }
@@ -998,7 +1007,7 @@ footer {
   font-weight: 900;
   font-size: 1.5rem;
   letter-spacing: 0.05em;
-  color: white;
+  color: var(--black);
   margin-bottom: 0.4rem;
 }
 
@@ -1006,7 +1015,7 @@ footer {
   font-family: var(--font-mono);
   font-size: 0.6rem;
   letter-spacing: 0.2em;
-  color: rgba(255,255,255,0.4);
+  color: var(--gray);
   margin-bottom: 1.5rem;
 }
 
@@ -1022,7 +1031,7 @@ footer {
   font-size: 0.6rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.5);
+  color: var(--gray);
   transition: color 0.2s;
 }
 .footer-links a:hover { color: var(--accent); }
@@ -1030,7 +1039,7 @@ footer {
 .footer-copy {
   font-family: var(--font-mono);
   font-size: 0.55rem;
-  color: rgba(255,255,255,0.25);
+  color: var(--muted);
   letter-spacing: 0.1em;
 }
 
