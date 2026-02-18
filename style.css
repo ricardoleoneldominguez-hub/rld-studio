@@ -502,7 +502,7 @@ nav {
   text-transform: uppercase;
   color: var(--muted);
   display: grid;
-  grid-template-columns: 50px 1fr 180px 120px;
+  grid-template-columns: 50px 1fr 100px 80px;
   padding: 0.75rem 1.5rem;
   border-bottom: 1px solid var(--border);
   margin-bottom: 0;
@@ -510,11 +510,12 @@ nav {
 
 .track-row {
   display: grid;
-  grid-template-columns: 50px 1fr 180px 120px;
-  padding: 1.1rem 1.5rem;
+  grid-template-columns: 50px 1fr 100px 80px;
+  padding: 1rem 1.5rem;
   border-bottom: 1px solid rgba(42,42,50,0.5);
   transition: background 0.2s;
   align-items: center;
+  gap: 0.5rem;
 }
 .track-row:hover { background: var(--surface); }
 
@@ -538,14 +539,6 @@ nav {
   color: var(--muted);
 }
 
-.track-genre {
-  font-family: var(--font-mono);
-  font-size: 0.58rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
 .track-lang {
   font-family: var(--font-mono);
   font-size: 0.58rem;
@@ -553,14 +546,42 @@ nav {
   color: var(--gold);
 }
 
+.track-link {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid var(--border);
+  padding: 0.25rem 0.6rem;
+  transition: all 0.2s;
+  white-space: nowrap;
+  text-decoration: none;
+  text-align: center;
+}
+.track-link:hover {
+  background: var(--gold);
+  color: var(--black);
+  border-color: var(--gold);
+}
+.spotify-link {
+  color: #1db954;
+  border-color: #1db954;
+  margin-left: 0.4rem;
+}
+.spotify-link:hover {
+  background: #1db954;
+  color: var(--black);
+  border-color: #1db954;
+}
+
 @media (max-width: 640px) {
   .tracks-header { display: none; }
   .track-row {
-    grid-template-columns: 30px 1fr;
-    grid-template-rows: auto auto;
-    gap: 0.25rem;
+    grid-template-columns: 30px 1fr auto;
+    gap: 0.5rem;
   }
-  .track-genre, .track-lang { display: none; }
+  .track-lang { display: none; }
 }
 
 /* ── BACK LINK ── */
