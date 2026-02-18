@@ -9,7 +9,7 @@
 <body>
 
 <nav>
-  <a href="index.html" class="nav-logo">RLD STUDIO</a>
+  <a href="index.html" class="nav-logo">RLD <span>STUDIO</span></a>
   <ul class="nav-links" id="navLinks">
     <li><a href="index.html">Home</a></li>
     <li><a href="vista-general.html">Vista General</a></li>
@@ -105,5 +105,11 @@
 </footer>
 
 <script src="nav.js"></script>
+<script>
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+  }, { threshold: 0.05 });
+  document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+</script>
 </body>
 </html>
