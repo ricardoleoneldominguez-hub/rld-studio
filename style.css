@@ -8,10 +8,10 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg:       #0d0d0d;
-  --surface:  #141414;
-  --panel:    #1a1a1a;
-  --border:   #2a2a2a;
+  --bg:       #1e1e1e;
+  --surface:  #262626;
+  --panel:    #2c2c2c;
+  --border:   #383838;
   --muted:    #555;
   --gray:     #999;
   --light:    #e8e8e8;
@@ -36,12 +36,12 @@
 html { scroll-behavior: smooth; }
 
 body {
-  background-color: var(--bg);
+  background-color: #222;
   color: var(--light);
   font-family: var(--font-display);
   font-size: 16px;
   line-height: 1.6;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
@@ -441,7 +441,7 @@ nav {
 
 .page-header {
   position: relative;
-  min-height: 50vh;
+  min-height: 35vh;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
@@ -507,7 +507,7 @@ nav {
 /* ── ALBUM PAGE HEADER WITH IMAGE ── */
 .album-header {
   position: relative;
-  min-height: 60vh;
+  min-height: 40vh;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
@@ -897,6 +897,52 @@ nav {
   transform: translateY(0);
 }
 
+/* ── PAYMENT BUTTONS ── */
+.payment-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.pay-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  padding: 0.9rem 1.75rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s;
+  text-decoration: none;
+}
+
+.paypal-btn {
+  background: #003087;
+  color: #fff;
+}
+.paypal-btn:hover {
+  background: #0070ba;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,112,186,0.35);
+}
+
+.googlepay-btn {
+  background: #fff;
+  color: #1a1a1a;
+  border: 1px solid #dadce0;
+}
+.googlepay-btn:hover {
+  background: #f8f9fa;
+  color: #1a1a1a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
 /* ── FOOTER ── */
 footer {
   background: var(--surface);
@@ -1031,3 +1077,66 @@ footer {
 .hero-stats    { animation: fadeUp 0.6s ease both; animation-delay: 0.45s; }
 .hero-cta      { animation: fadeUp 0.6s ease both; animation-delay: 0.55s; }
 
+
+/* ── PLATFORMS ── */
+.platforms-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.platform-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  padding: 0.7rem 1.2rem;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--light);
+  text-decoration: none;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.platform-btn:hover {
+  transform: translateY(-3px);
+  color: var(--white);
+}
+.platform-btn.spotify  { --c: #1db954; }
+.platform-btn.youtube  { --c: #ff0000; }
+.platform-btn.ytmusic  { --c: #ff0000; }
+.platform-btn.apple    { --c: #fc3c44; }
+.platform-btn.amazon   { --c: #ff9900; }
+.platform-btn.deezer   { --c: #a238ff; }
+
+.platform-btn:hover { border-color: var(--c); box-shadow: 0 6px 20px color-mix(in srgb, var(--c) 25%, transparent); }
+.platform-btn .platform-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--c);
+  flex-shrink: 0;
+}
+
+/* Footer platforms */
+.footer-platforms {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+.footer-platform {
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 0.3rem 0.7rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.footer-platform:hover { color: var(--accent); border-color: var(--accent); }

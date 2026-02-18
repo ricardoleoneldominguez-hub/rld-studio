@@ -5,6 +5,144 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RLD STUDIO — Assorted Minds</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* HOME LAYOUT */
+    .home-hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-top: 64px;
+    }
+
+    .home-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 4rem 3rem 4rem 4rem;
+      position: relative;
+    }
+    .home-left::after {
+      content: '';
+      position: absolute;
+      top: 10%; bottom: 10%; right: 0;
+      width: 1px;
+      background: linear-gradient(to bottom, transparent, var(--border), transparent);
+    }
+
+    .home-right {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 4rem 4rem 4rem 3rem;
+      justify-content: center;
+    }
+
+    .home-right img {
+      width: 100%;
+      object-fit: cover;
+      border: 1px solid var(--border);
+      transition: transform 0.4s;
+    }
+    .home-right img:hover { transform: scale(1.01); }
+
+    .home-title {
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      line-height: 0.95;
+      letter-spacing: -0.02em;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+    }
+    .home-title .accent { color: var(--accent); }
+
+    .home-subtitle {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .home-subtitle::before {
+      content: '';
+      width: 30px; height: 1px;
+      background: var(--accent);
+      display: inline-block;
+    }
+
+    .home-desc {
+      font-family: var(--font-display);
+      font-weight: 400;
+      font-size: 0.95rem;
+      color: var(--gray);
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+      max-width: 480px;
+    }
+
+    .home-desc strong {
+      color: var(--white);
+      font-weight: 700;
+    }
+
+    .home-desc-en {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      max-width: 480px;
+      border-left: 2px solid var(--border);
+      padding-left: 1rem;
+    }
+
+    .home-stats {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+    .home-stat-num {
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 1.8rem;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .home-stat-label {
+      font-family: var(--font-mono);
+      font-size: 0.55rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .home-cta {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    /* ALBUMS STRIP */
+    .albums-strip {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+      .home-hero { grid-template-columns: 1fr; }
+      .home-left { padding: 3rem 1.5rem 2rem; }
+      .home-left::after { display: none; }
+      .home-right { padding: 0 1.5rem 3rem; flex-direction: row; overflow-x: auto; }
+      .home-right img { min-width: 200px; }
+    }
+  </style>
 </head>
 <body>
 
@@ -27,104 +165,118 @@
   </button>
 </nav>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-content">
-    <div class="hero-eyebrow">RLD Ensemble · 2025</div>
-    <h1 class="hero-title">ASSORTED<br><span class="accent-word">MINDS</span></h1>
-    <p class="hero-subtitle">Un viaje musical sin fronteras — 50 canciones en inglés, español y náhuatl.</p>
-    <div class="hero-stats">
+<!-- HERO: texto izquierda / imágenes derecha -->
+<section class="home-hero">
+
+  <div class="home-left fade-in">
+    <div class="home-subtitle">RLD Ensemble · 2025</div>
+    <h1 class="home-title">ASSORTED<br><span class="accent">MINDS</span><br>PROJECT</h1>
+
+    <p class="home-desc">
+      <strong>ASSORTED MINDS: Un Viaje Musical sin Fronteras</strong><br><br>
+      RLD ENSEMBLE es un proyecto de exploración musical que trasciende géneros, idiomas y métodos de producción. ASSORTED MINDS (Mentes Diversas) representa nuestra primera colección completa: canciones que navegan desde el indie folk hasta el rock progresivo, desde baladas introspectivas hasta experimentación sonora vanguardista.
+    </p>
+
+    <p class="home-desc">
+      <strong>Producción Híbrida</strong><br>
+      Cada canción es el resultado de una colaboración única entre creatividad humana, instrumentación digital y analógica (DAWs), y herramientas de inteligencia artificial.
+    </p>
+
+    <p class="home-desc-en">
+      RLD ENSEMBLE is a musical exploration project that transcends genres, languages, and production methods. ASSORTED MINDS represents our first full collection. Each song is the result of a unique collaboration between human creativity, digital and analog instrumentation, and artificial intelligence tools.
+    </p>
+
+    <p class="home-desc">
+      <strong>Un Proyecto Multilingüe</strong><br>
+      Nuestras letras están escritas en inglés, español y náhuatl, reflejando una visión multicultural y una profunda conexión con las raíces latinoamericanas.
+    </p>
+
+    <div class="home-stats">
       <div>
-        <div class="hero-stat-num">50</div>
-        <div class="hero-stat-label">Canciones</div>
+        <div class="home-stat-num">50</div>
+        <div class="home-stat-label">Canciones</div>
       </div>
       <div>
-        <div class="hero-stat-num">5</div>
-        <div class="hero-stat-label">Álbumes</div>
+        <div class="home-stat-num">5</div>
+        <div class="home-stat-label">Álbumes</div>
       </div>
       <div>
-        <div class="hero-stat-num">3</div>
-        <div class="hero-stat-label">Idiomas</div>
-      </div>
-      <div>
-        <div class="hero-stat-num">20+</div>
-        <div class="hero-stat-label">Géneros</div>
+        <div class="home-stat-num">3</div>
+        <div class="home-stat-label">Idiomas</div>
       </div>
     </div>
-    <div class="hero-cta">
+
+    <div class="home-cta">
       <a href="vista-general.html" class="btn btn-primary">Explorar Discografía →</a>
       <a href="apoya.html" class="btn btn-secondary">Apoya el Proyecto</a>
+      <a href="contacto.html" class="btn btn-secondary">Contacto</a>
     </div>
   </div>
+
+  <div class="home-right fade-in">
+    <img src="home-photo.png" alt="RLD Studio" style="max-height:340px;">
+    <img src="album1.png" alt="Assorted Minds — Album 1" style="max-height:380px;">
+  </div>
+
 </section>
 
-<!-- ALBUMS PREVIEW -->
-<section class="albums-section">
+<!-- ALBUMS STRIP -->
+<section class="albums-strip">
   <div class="section-label fade-in">Colección Completa</div>
   <h2 class="section-title fade-in">LOS CINCO ÁLBUMES</h2>
-
   <div class="album-cards">
-
     <a href="echoes-farewells.html" class="album-card fade-in">
-      <div class="album-card-img">
-        <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SRfrfgK2F0JkaR60Wg2VRjrDsNTkVqZ8tgvT4wGi-mEUj0UpEr5T_A7dR3AKXqGb6CRaPlYwX13_iQgIaRGBVhPV73uuyyTP71vMmVrAPuCF5evL9ZHIh_Nlel3nVaCJ4JTTJ9RdfKXAhZIIVJ5FsJUa63kMDmmRWwQgnQ1ZBEYzaoR2CIbrlCUuPfG5ek4OubFeS8PN0D06tz30VHlYYzzWabqN4iE_IrIF-0=w1280" alt="Echoes &amp; Farewells">
-      </div>
+      <div class="album-card-img"><img src="album1.png" alt="Echoes &amp; Farewells"></div>
       <div class="album-card-body">
         <div class="album-card-num">Álbum 01</div>
         <div class="album-card-title">ECHOES &amp; FAREWELLS</div>
         <div class="album-card-meta">10 tracks · EN / ES</div>
       </div>
     </a>
-
     <a href="cosmic-nights.html" class="album-card fade-in">
-      <div class="album-card-img">
-        <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SSD6hn5HR05vfku9LD8oV8rhOXVYrl5INLp2GiSI2c4nZO53XOUmO3ni1Av3MNmn0jPLWamMqo8EcfizaHco9zu-3YdiYvNHWXnJmXnnwkh7Qo7VFpRhLQdsm7uhlpr0nJbxZ1ZKgkoPNnyuBpcATPWjHB7njPlFh4yGoPyJ1vdG06OLQ0HvwN-1wmpwgYpmJtwy_UfqYQLQqjt_iazWawy2kU7baGmLx7Bems=w1280" alt="Cosmic Nights">
-      </div>
+      <div class="album-card-img"><img src="album2.png" alt="Cosmic Nights"></div>
       <div class="album-card-body">
         <div class="album-card-num">Álbum 02</div>
         <div class="album-card-title">COSMIC NIGHTS</div>
         <div class="album-card-meta">10 tracks · EN</div>
       </div>
     </a>
-
     <a href="inner-landscapes.html" class="album-card fade-in">
-      <div class="album-card-img">
-        <img src="https://lh3.googleusercontent.com/sitesv/APaQ0STJiAqg6D38rT36PeLeYphXv4zY5joBuRYlB2VJXbs1xh35yMExATWQ545suu2XRANIoWGr_-ZkqeyUiJFV8QhvM06Au5LIeNIqjMBFTVLq0WxctAx030OFZ7Gl-KvEBD6dSRiuPFMLL0CV3CKg9jph8mZ_Vv5wpNE77PIZjfepIcimOA1GCv-rHGAcAXOEjMU-wr-eJFH8enH5-_CcGq83ZmQnXzCQudXj=w1280" alt="Inner Landscapes">
-      </div>
+      <div class="album-card-img"><img src="album3.png" alt="Inner Landscapes"></div>
       <div class="album-card-body">
         <div class="album-card-num">Álbum 03</div>
         <div class="album-card-title">INNER LANDSCAPES</div>
         <div class="album-card-meta">10 tracks · EN</div>
       </div>
     </a>
-
     <a href="horizons.html" class="album-card fade-in">
-      <div class="album-card-img">
-        <img src="https://lh3.googleusercontent.com/sitesv/APaQ0STninkvnFylpxGCl7PUulVmyzE-3KwS5F909B66ET8FxUI8iP5fsMZjh8bq-GSjqedJBCZKr5GBO3wCviEDWU4DCsjrOLrN0jYl-sXv6Xoxyv2bnlenNh-OcZd34IZTlAP9aY2GnsKf7ki8oBphXi4QW-tMaISfC95v9oJBCtB0f9jnFpLkRSPZpkZahRAxuXLxafBinhyC56PqVKbWLWVVelEcuTMW-zgvZfQ=w1280" alt="Horizons">
-      </div>
+      <div class="album-card-img"><img src="album4.png" alt="Horizons"></div>
       <div class="album-card-body">
         <div class="album-card-num">Álbum 04</div>
         <div class="album-card-title">HORIZONS</div>
         <div class="album-card-meta">10 tracks · EN / ES / Náhuatl</div>
       </div>
     </a>
-
     <a href="pictures-and-walls.html" class="album-card fade-in">
-      <div class="album-card-img">
-        <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SSJjj23EEFChpgFmhf_PmMihsHTic-eiAjtZ7kmdhOjI_rewFhbaiTnez0EnWAcSeRDVDt8LxsIck8TRnVG7JxoRzw3CEPgo6aBku-Rfwy2bTMz0r5o0xYDL5Yz5ITk2nDJnre2MMV4RMVrM6c1Yf6gEdiFhr2e4pZ3c7dc8pYg3304yLhyvy4e_xO5idaksZRvgt0yfKa1ICRJaLEY4d4c_RFy1xpdt3TRuJk=w1280" alt="Pictures &amp; Walls">
-      </div>
+      <div class="album-card-img"><img src="album5.png" alt="Pictures &amp; Walls"></div>
       <div class="album-card-body">
         <div class="album-card-num">Álbum 05</div>
         <div class="album-card-title">PICTURES &amp; WALLS</div>
         <div class="album-card-meta">10 tracks · EN</div>
       </div>
     </a>
-
   </div>
 </section>
 
 <footer>
+  <div class="footer-platforms">
+    <a href="https://open.spotify.com/artist/4WB8BqVCg1rGiYrEBMGKe3" target="_blank" class="footer-platform">Spotify</a>
+    <a href="https://www.youtube.com/playlist?list=PL9x1a4Y-b4WFkIY2w9EP1-5nsjQ_xPNNM" target="_blank" class="footer-platform">YouTube</a>
+    <a href="https://music.youtube.com/search?q=RLD+ENSEMBLE" target="_blank" class="footer-platform">YouTube Music</a>
+    <a href="https://music.apple.com/search?term=RLD+ENSEMBLE" target="_blank" class="footer-platform">Apple Music</a>
+    <a href="https://music.amazon.com/search/RLD+ENSEMBLE" target="_blank" class="footer-platform">Amazon Music</a>
+    <a href="https://www.deezer.com/search/RLD%20ENSEMBLE" target="_blank" class="footer-platform">Deezer</a>
+  </div>
   <div class="footer-logo">RLD STUDIO</div>
   <div class="footer-sub">RLD Ensemble · Assorted Minds Project</div>
   <div class="footer-links">
