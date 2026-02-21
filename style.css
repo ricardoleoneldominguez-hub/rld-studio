@@ -1038,9 +1038,10 @@ footer {
 
 .footer-copy {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
-  color: var(--muted);
+  font-size: 0.75rem;
+  color: var(--gray);
   letter-spacing: 0.1em;
+  font-weight: 600;
 }
 
 /* ── ALBUM HEADER WITH IMAGE ── */
