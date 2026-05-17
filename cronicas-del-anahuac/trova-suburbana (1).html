@@ -7,6 +7,36 @@
   <meta name="description" content="Trova Suburbana — Capítulo 04 de Crónicas del Anáhuac. 20 canciones. Trova íntima y baladas urbanas. Todo lo que el tiempo guarda sin avisar.">
   <meta name="keywords" content="Trova Suburbana, Crónicas del Anáhuac, RLD Ensemble, trova, baladas urbanas, música hondureña">
   <link rel="stylesheet" href="cronicas-style.css">
+  <style>
+    .page-header {
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: flex-start !important;
+      gap: 2rem !important;
+      padding: 2.5rem 3rem !important;
+    }
+    .page-header-cover {
+      width: 140px !important;
+      height: 140px !important;
+      min-width: 140px !important;
+      flex-shrink: 0 !important;
+      border: 3px solid var(--dark) !important;
+      overflow: hidden !important;
+      box-shadow: 5px 5px 0 var(--accent) !important;
+    }
+    .page-header-cover img {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+    }
+    .page-header-content {
+      flex: 1 !important;
+    }
+    @media (max-width: 640px) {
+      .page-header { flex-direction: column !important; }
+      .page-header-cover { width: 110px !important; height: 110px !important; min-width: 110px !important; }
+    }
+  </style>
 </head>
 <body class="page">
 
@@ -30,14 +60,14 @@
   <main>
 
     <!-- PAGE HEADER -->
-    <header class="page-header">
+    <header class="page-header" style="display:block; padding:2.5rem 3rem; overflow:hidden;">
       <div class="page-header-bg"></div>
-      <div class="page-header-cover"><img src="album4.png" alt="Trova Suburbana — Portada"></div>
+      <div class="page-header-cover" style="width:140px; height:140px; flex-shrink:0; border:3px solid var(--dark); overflow:hidden; box-shadow:5px 5px 0 var(--accent); display:inline-block; vertical-align:top; margin-right:2rem; float:left;"><img src="album4.png" alt="Trova Suburbana — Portada" style="width:100%; height:100%; object-fit:cover;"></div>
       <div class="page-header-content">
         <p class="page-chapter">Crónicas del Anáhuac · Capítulo 04</p>
         <h1 class="page-title">Trova Suburbana</h1>
         <p class="page-tagline">Todo lo que el tiempo guarda sin avisar</p>
-        <p class="page-desc">Trova íntima y baladas urbanas desde la orilla cotidiana. Cafeterías, madrugadas, espejos y calles — 18 canciones originales en español que miran de cerca lo que otros pasan por alto.</p>
+        <p class="page-desc">Trova íntima y baladas urbanas desde la orilla cotidiana. Cafeterías, madrugadas, espejos y calles — 20 canciones originales en español que miran de cerca lo que otros pasan por alto.</p>
       </div>
     </header>
 
@@ -285,7 +315,7 @@
         <div class="track-row">
           <div class="track-num">15</div>
           <div class="track-info">
-            <div class="track-title">SUEÑOS DE PROZAC</div>
+            <div class="track-title">Sueños de Prozac</div>
             <div class="track-subtitle">Crónicas del Anáhuac · RLD ENSEMBLE</div>
           </div>
           <div class="track-lang">ES</div>
