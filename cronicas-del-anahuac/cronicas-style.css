@@ -933,3 +933,90 @@ footer {
   background: var(--border);
   margin: 2.5rem 0;
 }
+
+/* ── PORTADA EN PAGE HEADER ── */
+.page-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: end;
+  gap: 2.5rem;
+  padding: 2.5rem 3rem;
+}
+.page-header-cover {
+  width: 160px;
+  height: 160px;
+  flex-shrink: 0;
+  border: 3px solid var(--dark);
+  overflow: hidden;
+  box-shadow: 6px 6px 0 var(--accent);
+  position: relative;
+  z-index: 1;
+}
+.page-header-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 640px) {
+  .page-header { grid-template-columns: 1fr; }
+  .page-header-cover { width: 110px; height: 110px; }
+}
+
+/* ── SPOTIFY ÁLBUM BANNER ── */
+.album-spotify-banner {
+  margin: 1.5rem 0;
+  border: 2.5px solid #1DB954;
+  background: rgba(29,185,84,0.05);
+  padding: 1.25rem 1.5rem;
+  position: relative;
+}
+.album-spotify-banner::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 4px;
+  height: 100%;
+  background: #1DB954;
+}
+.album-spotify-inner {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+.album-spotify-icon { flex-shrink: 0; display: flex; align-items: center; }
+.album-spotify-text { flex: 1; display: flex; flex-direction: column; gap: 0.2rem; }
+.album-spotify-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #1DB954;
+}
+.album-spotify-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--black);
+}
+.album-spotify-btn {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: white;
+  background: #1DB954;
+  border: 2px solid #1DB954;
+  padding: 0.7rem 1.4rem;
+  text-decoration: none;
+  transition: all 0.2s;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.album-spotify-btn:hover {
+  background: #17a349;
+  border-color: #17a349;
+  color: white;
+  transform: translateY(-2px);
+}
