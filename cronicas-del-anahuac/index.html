@@ -11,29 +11,6 @@
   <meta property="og:url" content="https://rldstudio.net/cronicas-del-anahuac/">
   <link rel="stylesheet" href="cronicas-style.css">
   <style>
-    /* ── CORRECCIÓN FOTOS HERO ─────────────────────────────────── */
-    /* home-photo.png es vertical (900×1600) — mostrar parte superior (cascada completa) */
-    .home-right img.photo-portrait {
-      width: 100%;
-      height: 420px;
-      object-fit: cover;
-      object-position: top center;
-      border: 2px solid var(--dark);
-      transition: transform 0.3s;
-    }
-    /* home-photo2.png es horizontal (1600×900) — altura estándar */
-    .home-right img.photo-landscape {
-      width: 100%;
-      height: 240px;
-      object-fit: cover;
-      object-position: center;
-      border: 2px solid var(--dark);
-      transition: transform 0.3s;
-    }
-    .home-right img.photo-portrait:hover,
-    .home-right img.photo-landscape:hover { transform: scale(1.01); }
-
-    /* ── PORTADA ÁLBUM 1 (imagen pendiente) ───────────────────── */
     .album-cover-placeholder {
       width: 100%;
       aspect-ratio: 1;
@@ -69,32 +46,27 @@
   </nav>
 
   <main>
-    <!-- HERO -->
-    <section class="home-hero">
 
+    <!-- HERO — sin fotos por ahora -->
+    <section class="home-hero" style="grid-template-columns: 1fr;">
       <div class="home-left">
         <p class="home-eyebrow">RLD ENSEMBLE · Segundo Proyecto</p>
-
         <h1 class="home-title">
           CRÓNICAS<br>
           <span class="accent">DEL ANÁHUAC</span>
         </h1>
-
         <p class="home-desc">
           <strong>Cuatro mundos paralelos que no siguen un orden cronológico</strong> sino una lógica más antigua: la de las historias que coexisten sin pedirse permiso.
         </p>
-
         <p class="home-desc-en">
           Desde las voces prehispánicas del Anáhuac hasta el folklore sobrenatural de Centroamérica, desde los mares del Caribe colonial hasta las calles y cafeterías de hoy.
         </p>
-
         <div class="lang-tags">
           <span class="lang-tag">Español</span>
           <span class="lang-tag">Nahuatl</span>
           <span class="lang-tag">Tz'utujil</span>
           <span class="lang-tag">Ch'orti' Maya</span>
         </div>
-
         <div class="home-stats">
           <div>
             <div class="home-stat-num">4</div>
@@ -109,34 +81,22 @@
             <div class="home-stat-label">Mundos</div>
           </div>
         </div>
-
         <p class="home-desc" style="font-size:0.85rem; margin-bottom:0.5rem;">
           Todas las canciones son originales, escritas por RLD en el cruce entre <strong>inteligencia artificial, software de producción y creatividad humana</strong>.
         </p>
-
         <div class="home-cta">
           <a href="vista-general.html" class="btn btn-primary">Explorar Discografía →</a>
           <a href="https://rldstudio.net/apoya.html" class="btn btn-secondary">Apoya el Proyecto</a>
         </div>
       </div>
-
-      <div class="home-right">
-        <!-- CASCADA: imagen vertical 900×1600 → clase portrait para mostrar completa -->
-        <img src="home-photo.png" alt="Cascada — Crónicas del Anáhuac" class="photo-portrait">
-        <!-- JARDÍN: imagen horizontal 1600×900 → clase landscape -->
-        <img src="home-photo2.png" alt="Jardín de musgo — Crónicas del Anáhuac" class="photo-landscape">
-      </div>
-
     </section>
 
     <!-- ÁLBUMES -->
     <section class="albums-section">
       <p class="section-label">Colección Completa</p>
       <h2 class="section-title">LOS CUATRO CAPÍTULOS</h2>
-
       <div class="album-cards">
 
-        <!-- Álbum 1: portada pendiente de subir — placeholder visual -->
         <a href="anahuac.html" class="album-card fade-in">
           <div class="album-card-img">
             <div class="album-cover-placeholder">🌄</div>
