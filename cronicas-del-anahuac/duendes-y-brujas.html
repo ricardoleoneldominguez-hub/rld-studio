@@ -47,30 +47,12 @@
 
       <!-- INFO GRID -->
       <div class="info-grid">
-        <div class="info-block">
-          <div class="info-block-label">Proyecto</div>
-          <div class="info-block-value">Crónicas del Anáhuac</div>
-        </div>
-        <div class="info-block">
-          <div class="info-block-label">Capítulo</div>
-          <div class="info-block-value">02 de 04</div>
-        </div>
-        <div class="info-block">
-          <div class="info-block-label">Canciones</div>
-          <div class="info-block-value">6 tracks</div>
-        </div>
-        <div class="info-block">
-          <div class="info-block-label">Idiomas</div>
-          <div class="info-block-value">Español</div>
-        </div>
-        <div class="info-block">
-          <div class="info-block-label">Artista</div>
-          <div class="info-block-value">RLD ENSEMBLE</div>
-        </div>
-        <div class="info-block">
-          <div class="info-block-label">Estado</div>
-          <div class="info-block-value">6 tracks · Completo</div>
-        </div>
+        <div class="info-block"><div class="info-block-label">Proyecto</div><div class="info-block-value">Crónicas del Anáhuac</div></div>
+        <div class="info-block"><div class="info-block-label">Capítulo</div><div class="info-block-value">02 de 04</div></div>
+        <div class="info-block"><div class="info-block-label">Canciones</div><div class="info-block-value">6 tracks</div></div>
+        <div class="info-block"><div class="info-block-label">Idiomas</div><div class="info-block-value">Español</div></div>
+        <div class="info-block"><div class="info-block-label">Artista</div><div class="info-block-value">RLD ENSEMBLE</div></div>
+        <div class="info-block"><div class="info-block-label">Estado</div><div class="info-block-value">6 tracks · Completo</div></div>
       </div>
 
       <!-- SPOTIFY ÁLBUM BANNER -->
@@ -83,7 +65,7 @@
             <span class="album-spotify-eyebrow">Playlist del Álbum</span>
             <span class="album-spotify-title">Escuchar Duendes y Brujas en Spotify</span>
           </div>
-          <a href="#spotify-album-ca2" class="album-spotify-btn" target="_blank" onclick="return false;" title="Link próximamente">
+          <a href="https://open.spotify.com/playlist/3axZhPez9CoY4N9kVn28i3" class="album-spotify-btn" target="_blank">
             Abrir en Spotify →
           </a>
         </div>
@@ -175,7 +157,7 @@
       <div class="divider-line"></div>
 
       <div class="highlight">
-        <strong>Próximamente en plataformas digitales.</strong> Todas las canciones son originales, escritas por RLD en el cruce entre inteligencia artificial, software de producción y creatividad humana.
+        <strong>Ya disponible en plataformas digitales.</strong> Todas las canciones son originales, escritas por RLD en el cruce entre inteligencia artificial, software de producción y creatividad humana.
       </div>
 
       <div class="divider-line"></div>
@@ -185,7 +167,7 @@
         <a href="https://open.spotify.com/artist/4WB8BqVCg1rGiYrEBMGKe3" class="platform-btn spotify" target="_blank">
           <span class="platform-dot"></span> Spotify
         </a>
-        <a href="#spotify-album-ca2" class="platform-btn spotify" style="opacity:0.5;" target="_blank" title="Link de álbum próximamente" onclick="return false;">
+        <a href="https://open.spotify.com/playlist/3axZhPez9CoY4N9kVn28i3" class="platform-btn spotify" target="_blank">
           <span class="platform-dot"></span> Duendes y Brujas en Spotify
         </a>
         <a href="https://www.youtube.com/playlist?list=PL9x1a4Y-b4WFkIY2w9EP1-5nsjQ_xPNNM" class="platform-btn youtube" target="_blank">
@@ -223,8 +205,15 @@
       <a href="https://rldstudio.net/apoya.html">Apoya</a>
       <a href="https://rldstudio.net/contacto.html">Contacto</a>
     </nav>
-    <p class="footer-copy"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8bf8e4e6e4f8cbf9e7eff8fffeefe2e4a5e5eeff">[email&#160;protected]</a> · RLD Studio © 2026</p>
+    <p class="footer-copy">somos@rldstudio.net · RLD Studio © 2026</p>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-    const observer = new IntersectionObserver(entries =
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
