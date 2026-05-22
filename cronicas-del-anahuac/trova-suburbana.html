@@ -77,30 +77,12 @@
 
       <!-- INFO GRID -->
       <div class="info-grid">
-        <div class="info-block">
-          <div class="info-block-label">Proyecto</div>
-          <div class="info-block-value">Crónicas del Anáhuac</div>
-        </div>
-        <div class="info-block">
-          <div class="info-block-label">Capítulo</div>
-          <div class="info-block-value">04 de 04</div>
-        </div>
-        <div class="info-block">
-          <div class="info-block-label">Canciones</div>
-          <div class="info-block-value">20 tracks</div>
-        </div>
-        <div class="info-block">
-          <div class="info-block-label">Idioma</div>
-          <div class="info-block-value">Español</div>
-        </div>
-        <div class="info-block">
-          <div class="info-block-label">Artista</div>
-          <div class="info-block-value">RLD ENSEMBLE</div>
-        </div>
-        <div class="info-block">
-          <div class="info-block-label">Producción</div>
-          <div class="info-block-value">IA + Humana</div>
-        </div>
+        <div class="info-block"><div class="info-block-label">Proyecto</div><div class="info-block-value">Crónicas del Anáhuac</div></div>
+        <div class="info-block"><div class="info-block-label">Capítulo</div><div class="info-block-value">04 de 04</div></div>
+        <div class="info-block"><div class="info-block-label">Canciones</div><div class="info-block-value">20 tracks</div></div>
+        <div class="info-block"><div class="info-block-label">Idioma</div><div class="info-block-value">Español</div></div>
+        <div class="info-block"><div class="info-block-label">Artista</div><div class="info-block-value">RLD ENSEMBLE</div></div>
+        <div class="info-block"><div class="info-block-label">Producción</div><div class="info-block-value">IA + Humana</div></div>
       </div>
 
       <!-- SPOTIFY ÁLBUM BANNER -->
@@ -113,7 +95,7 @@
             <span class="album-spotify-eyebrow">Playlist del Álbum</span>
             <span class="album-spotify-title">Escuchar Trova Suburbana en Spotify</span>
           </div>
-          <a href="#spotify-album-ca4" class="album-spotify-btn" target="_blank" onclick="return false;" title="Link próximamente">
+          <a href="https://open.spotify.com/playlist/4oOU6c7oxW2FcaumWraxHg" class="album-spotify-btn" target="_blank">
             Abrir en Spotify →
           </a>
         </div>
@@ -345,11 +327,6 @@
           <div><a href="#" class="track-link" style="color:#1DB954; border-color:#1DB954; opacity:0.5;" title="Link de Spotify próximamente" onclick="return false;">♫</a></div>
         </div>
 
-        <div class="track-lang">ES</div>
-          <div><a href="https://ricardoleoneldominguez-hub.github.io/CRONICAS-lirics/CA4_T18_UN_POCO_MAS.html" class="track-link" target="_blank">Letra</a></div>
-          <div><a href="#" class="track-link" style="color:#1DB954; border-color:#1DB954; opacity:0.5;" title="Link de Spotify próximamente" onclick="return false;">♫</a></div>
-        </div>
-
         <div class="track-row">
           <div class="track-num">18</div>
           <div class="track-info">
@@ -388,7 +365,7 @@
       <div class="divider-line"></div>
 
       <div class="highlight">
-        <strong>Próximamente en plataformas digitales.</strong> Todas las canciones son originales, escritas por RLD en el cruce entre inteligencia artificial, software de producción y creatividad humana.
+        <strong>Ya disponible en plataformas digitales.</strong> Todas las canciones son originales, escritas por RLD en el cruce entre inteligencia artificial, software de producción y creatividad humana.
       </div>
 
       <div class="divider-line"></div>
@@ -398,7 +375,7 @@
         <a href="https://open.spotify.com/artist/4WB8BqVCg1rGiYrEBMGKe3" class="platform-btn spotify" target="_blank">
           <span class="platform-dot"></span> Spotify
         </a>
-        <a href="#spotify-album-ca4" class="platform-btn spotify" style="opacity:0.5;" target="_blank" title="Link de álbum próximamente" onclick="return false;">
+        <a href="https://open.spotify.com/playlist/4oOU6c7oxW2FcaumWraxHg" class="platform-btn spotify" target="_blank">
           <span class="platform-dot"></span> Trova Suburbana en Spotify
         </a>
         <a href="https://www.youtube.com/playlist?list=PL9x1a4Y-b4WFkIY2w9EP1-5nsjQ_xPNNM" class="platform-btn youtube" target="_blank">
@@ -436,9 +413,15 @@
       <a href="https://rldstudio.net/apoya.html">Apoya</a>
       <a href="https://rldstudio.net/contacto.html">Contacto</a>
     </nav>
-    <p class="footer-copy"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9be8f4f6f4e8dbe9f7ffe8efeefff2f4b5f5feef">[email&#160;protected]</a> · RLD Studio © 2026</p>
+    <p class="footer-copy">somos@rldstudio.net · RLD Studio © 2026</p>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-    const observer = new IntersectionObserver(entries =
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
 
+</body>
+</html>
