@@ -11,15 +11,30 @@
   <meta property="og:url" content="https://rldstudio.net/cronicas-del-anahuac/">
   <link rel="stylesheet" href="cronicas-style.css">
   <style>
-    .album-cover-placeholder {
-      width: 100%;
-      aspect-ratio: 1;
+    /* ── FOTOS HERO ─────────────────────────────── */
+    .home-right {
       display: flex;
-      align-items: center;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 4rem 4rem 4rem 3rem;
       justify-content: center;
-      font-size: 3.5rem;
-      background: linear-gradient(135deg, #c47a1e22, #f0e8d0);
     }
+    .home-right img {
+      width: 100%;
+      display: block;
+      border: 2px solid #1e1508;
+      transition: transform 0.3s;
+      object-fit: cover;
+    }
+    .home-right img:first-child {
+      height: 320px;
+      object-position: center top;
+    }
+    .home-right img:last-child {
+      height: 240px;
+      object-position: center center;
+    }
+    .home-right img:hover { transform: scale(1.01); }
   </style>
 </head>
 <body>
@@ -47,8 +62,9 @@
 
   <main>
 
-    <!-- HERO — sin fotos por ahora -->
-    <section class="home-hero" style="grid-template-columns: 1fr;">
+    <!-- HERO -->
+    <section class="home-hero">
+
       <div class="home-left">
         <p class="home-eyebrow">RLD ENSEMBLE · Segundo Proyecto</p>
         <h1 class="home-title">
@@ -89,6 +105,14 @@
           <a href="https://rldstudio.net/apoya.html" class="btn btn-secondary">Apoya el Proyecto</a>
         </div>
       </div>
+
+      <div class="home-right">
+        <!-- Portada Anáhuac — imagen cuadrada -->
+        <img src="album1.png" alt="Anáhuac — RLD ENSEMBLE">
+        <!-- Bosque — imagen horizontal -->
+        <img src="home-photo.png" alt="Bosque — Crónicas del Anáhuac">
+      </div>
+
     </section>
 
     <!-- ÁLBUMES -->
@@ -99,7 +123,7 @@
 
         <a href="anahuac.html" class="album-card fade-in">
           <div class="album-card-img">
-            <div class="album-cover-placeholder">🌄</div>
+            <img src="album1.png" alt="Anáhuac">
           </div>
           <div class="album-card-body">
             <div class="album-card-num">Capítulo 01</div>
