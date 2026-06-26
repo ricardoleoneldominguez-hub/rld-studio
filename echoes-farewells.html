@@ -5,7 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RLD STUDIO — Echoes &amp; Farewells</title>
   <link rel="stylesheet" href="style.css">
-</head>
+<style>
+/* Banner playlist del álbum (estilo Crónicas, paleta cálida) */
+.am-spotify-banner{max-width:1000px;margin:0 auto 2rem;padding:0 2rem}
+.am-spotify-inner{display:flex;align-items:center;gap:1.1rem;background:var(--surface);border:2px solid var(--dark);border-left:6px solid #1DB954;border-radius:4px;padding:1.1rem 1.4rem;box-shadow:4px 4px 0 rgba(26,24,20,.08)}
+.am-spotify-icon{flex:0 0 auto;display:flex}
+.am-spotify-text{display:flex;flex-direction:column;gap:.25rem;flex:1 1 auto;min-width:0}
+.am-spotify-eyebrow{font-family:var(--font-mono);font-size:.55rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.am-spotify-title{font-family:var(--font-display);font-size:1.15rem;color:var(--dark);line-height:1.2}
+.am-spotify-btn{flex:0 0 auto;font-family:var(--font-mono);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:#1DB954;border:2px solid #169c45;border-radius:999px;padding:.6rem 1.1rem;text-decoration:none;white-space:nowrap;transition:all .2s}
+.am-spotify-btn:hover{background:#169c45}
+@media(max-width:600px){.am-spotify-inner{flex-wrap:wrap}.am-spotify-title{font-size:1rem}}
+</style></head>
 <body>
 
 <nav>
@@ -53,7 +64,7 @@
     <a href="vista-general.html" class="back-link" style="padding:0;">← Volver a Vista General</a>
   </div>
 
-  <div class="tracks-section fade-in">
+  <div class="am-spotify-banner"><div class="am-spotify-inner"><div class="am-spotify-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="#1DB954"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg></div><div class="am-spotify-text"><span class="am-spotify-eyebrow">Playlist del Álbum</span><span class="am-spotify-title">Escuchar Echoes &amp; Farewells en Spotify</span></div><a href="https://open.spotify.com/playlist/4fefVLeHJN8UCxBE1xlU5g" class="am-spotify-btn" target="_blank" rel="noopener">Abrir en Spotify →</a></div></div><div class="tracks-section fade-in">
     <div class="tracks-header">
       <span>#</span>
       <span>Canción</span>
