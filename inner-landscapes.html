@@ -16,26 +16,56 @@
 .am-spotify-btn{flex:0 0 auto;font-family:var(--font-mono);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:#1DB954;border:2px solid #169c45;border-radius:999px;padding:.6rem 1.1rem;text-decoration:none;white-space:nowrap;transition:all .2s}
 .am-spotify-btn:hover{background:#169c45}
 @media(max-width:600px){.am-spotify-inner{flex-wrap:wrap}.am-spotify-title{font-size:1rem}}
-</style></head>
+</style>  <link rel="stylesheet" href="/nav-menu.css">
+</head>
 <body>
 
-<nav>
-  <a href="index.html" class="nav-logo">RLD <span>STUDIO</span></a>
+<nav class="site-nav">
+  <a href="/" class="nav-logo">RLD <span>STUDIO</span></a>
   <ul class="nav-links" id="navLinks">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="vista-general.html">Vista General</a></li>
-    <li><a href="echoes-farewells.html">Echoes &amp; Farewells</a></li>
-    <li><a href="cosmic-nights.html">Cosmic Nights</a></li>
-    <li><a href="inner-landscapes.html" class="active">Inner Landscapes</a></li>
-    <li><a href="horizons.html">Horizons</a></li>
-    <li><a href="pictures-and-walls.html">Pictures &amp; Walls</a></li>
-    <li><a href="acerca-de.html">Acerca De</a></li>
-    <li><a href="apoya.html">Apoya</a></li>
-    <li><a href="contacto.html">Contacto</a></li>
+    <li><a href="/">Inicio</a></li>
+    <li class="has-sub">
+      <a href="/vista-general.html" class="active">Assorted Minds <span class="caret" aria-hidden="true">▾</span></a>
+      <ul class="sub">
+        <li><a href="/vista-general.html">Vista general</a></li>
+        <li><a href="/echoes-farewells.html">Echoes &amp; Farewells</a></li>
+        <li><a href="/cosmic-nights.html">Cosmic Nights</a></li>
+        <li><a href="/inner-landscapes.html" class="current">Inner Landscapes</a></li>
+        <li><a href="/horizons.html">Horizons</a></li>
+        <li><a href="/pictures-and-walls.html">Pictures &amp; Walls</a></li>
+      </ul>
+    </li>
+    <li class="has-sub">
+      <a href="/cronicas-del-anahuac/">Crónicas del Anáhuac <span class="caret" aria-hidden="true">▾</span></a>
+      <ul class="sub">
+        <li><a href="/cronicas-del-anahuac/vista-general.html">Los álbumes</a></li>
+        <li><a href="/cronicas-del-anahuac/anahuac.html">Anáhuac</a></li>
+        <li><a href="/cronicas-del-anahuac/duendes-y-brujas.html">Duendes y Brujas</a></li>
+        <li><a href="/cronicas-del-anahuac/cuentos-de-piratas.html">Cuentos de Piratas</a></li>
+        <li><a href="/cronicas-del-anahuac/trova-suburbana-vol1.html">Trova Suburbana I</a></li>
+        <li><a href="/cronicas-del-anahuac/trova-suburbana-vol2.html">Trova Suburbana II</a></li>
+      </ul>
+    </li>
+    <li class="has-sub">
+      <a href="/tambor-de-piedra/">Tambor de Piedra <span class="caret" aria-hidden="true">▾</span></a>
+      <ul class="sub">
+        <li><a href="/tambor-de-piedra/">La trilogía</a></li>
+        <li><a href="/tambor-de-piedra/raiz-de-mar.html">Raíz de Mar</a></li>
+        <li><a href="/tambor-de-piedra/raiz-de-piedra.html">Raíz de Piedra</a></li>
+        <li><a href="/tambor-de-piedra/raiz-de-tierra.html">Raíz de Tierra</a></li>
+      </ul>
+    </li>
+    <li><a href="/acerca-de.html">Acerca de</a></li>
+    <li><a href="/apoya.html">Apoya</a></li>
+    <li><a href="/contacto.html">Contacto</a></li>
   </ul>
-  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+  <button class="nav-hamburger" id="navToggle" aria-label="Menú" aria-controls="navLinks" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
+  <script>
+    (function(){var b=document.getElementById('navToggle'),l=document.getElementById('navLinks');
+      if(b&&l)b.addEventListener('click',function(){var o=l.classList.toggle('open');b.setAttribute('aria-expanded',o);});})();
+  </script>
 </nav>
 
 <main class="page">
