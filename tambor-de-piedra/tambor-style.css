@@ -136,3 +136,32 @@ body.theme-tierra { --accent: #7a3b2e; --ocre: #7a3b2e; --accent2: #a0583f; --oc
 a.vbtn-spotify:hover { background: #1DB954; color: #fff; }
 a.vbtn-letras:hover { background: var(--dark); color: var(--bg); }
 .vbtn.is-off { opacity: .45; cursor: default; }
+
+/* ── Libro de letras (notas del Productor) ── */
+.libro-banner {
+  display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap;
+  border: 2.5px solid var(--dark); background: var(--surface);
+  padding: 1.25rem 1.5rem; position: relative; box-shadow: 5px 5px 0 var(--accent);
+}
+.libro-icon { color: var(--accent); flex-shrink: 0; display: flex; }
+.libro-text { flex: 1; min-width: 220px; display: flex; flex-direction: column; gap: .2rem; }
+.libro-eyebrow { font-family: var(--font-mono); font-size: .55rem; letter-spacing: .22em; text-transform: uppercase; color: var(--accent); }
+.libro-title { font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; color: var(--black); }
+.libro-desc { font-size: .86rem; color: var(--gray); line-height: 1.6; margin-top: .2rem; }
+.libro-btn {
+  font-family: var(--font-body); font-weight: 700; font-size: .76rem; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--surface); background: var(--dark); border: 2px solid var(--dark);
+  padding: .75rem 1.3rem; text-decoration: none; white-space: nowrap; transition: background .2s, border-color .2s;
+}
+.libro-btn:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+@media (max-width: 640px) { .libro-btn { width: 100%; text-align: center; } }
+
+/* ── Portadas ── */
+.tri-img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; border-bottom: 2px solid var(--dark); }
+.version-cover { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; border: 2px solid var(--dark); margin-bottom: 1rem; }
+.version-cover.is-soon {
+  display: flex; align-items: center; justify-content: center; text-align: center;
+  background: repeating-linear-gradient(135deg, var(--panel) 0 12px, var(--bg2) 12px 24px);
+  border-style: dashed; color: var(--muted);
+  font-family: var(--font-mono); font-size: .62rem; letter-spacing: .2em; text-transform: uppercase; line-height: 1.8;
+}
