@@ -155,6 +155,8 @@
       gap: 4rem;
       align-items: start;
     }
+    .tp-grid { grid-template-columns: 1fr 1fr; align-items: end; }
+    .tp-album-cards { margin-top: 2.5rem; }
     .cronicas-quote {
       font-family: var(--font-display);
       font-weight: 900;
@@ -483,46 +485,61 @@
       <span class="cronicas-eyebrow" style="color:#1f6470;">Tercer Proyecto · Trilogía</span>
       <h2 class="cronicas-title">TAMBOR DE PIEDRA</h2>
     </div>
-    <div class="cronicas-grid">
+    <div class="cronicas-grid tp-grid">
       <div>
         <p class="cronicas-quote">"El mar, la piedra y la tierra."</p>
-        <p class="cronicas-text">Tres álbumes conceptuales sobre las raíces de Honduras: el <strong>mar</strong> garífuna, la <strong>piedra</strong> lenca y la <strong>tierra</strong> de Olancho. Rock progresivo, trova, folk latinoamericano y jazz de cámara.</p>
+        <p class="cronicas-text">Tres obras conceptuales en cinco álbumes sobre las raíces de Honduras: el <strong>mar</strong> garífuna, la <strong>piedra</strong> lenca y la <strong>tierra</strong> de Olancho. Rock progresivo, trova, folk latinoamericano y jazz de cámara.</p>
+      </div>
+      <div>
         <div class="cronicas-stats">
-          <div><div class="c-stat-num" style="color:#1f6470;">3</div><div class="c-stat-label">Álbumes</div></div>
+          <div><div class="c-stat-num" style="color:#1f6470;">5</div><div class="c-stat-label">Álbumes</div></div>
           <div><div class="c-stat-num" style="color:#1f6470;">37</div><div class="c-stat-label">Canciones</div></div>
           <div><div class="c-stat-num" style="color:#1f6470;">3</div><div class="c-stat-label">Raíces</div></div>
         </div>
         <a href="/tambor-de-piedra/" class="cronicas-btn">Explorar Trilogía →</a>
       </div>
-      <div class="c-albums">
-        <a href="/tambor-de-piedra/raiz-de-mar.html" class="c-album-card">
-          <div class="c-album-top" style="background:linear-gradient(135deg,rgba(31,100,112,0.15),#f0ede4);">
-            <img class="c-album-thumb" src="thumbs/tp-raiz-de-mar.jpg" alt="Raíz de Mar — portada" loading="lazy" width="96" height="96">
-            <div class="c-album-num" style="color:#1f6470;">Álbum 01</div>
-            <div class="c-album-title">Raíz de Mar</div>
-            <div class="c-album-tagline">Rock progresivo con ritmos garífunas</div>
-          </div>
-          <div class="c-album-bottom"><span class="c-album-meta">11 piezas · Masterizado ✓</span></div>
-        </a>
-        <a href="/tambor-de-piedra/raiz-de-piedra.html" class="c-album-card">
-          <div class="c-album-top" style="background:linear-gradient(135deg,rgba(110,91,69,0.16),#f0ede4);">
-            <img class="c-album-thumb" src="thumbs/tp-raiz-de-piedra.jpg" alt="Raíz de Piedra — portada" loading="lazy" width="96" height="96">
-            <div class="c-album-num" style="color:#6e5b45;">Álbum 02</div>
-            <div class="c-album-title">Raíz de Piedra</div>
-            <div class="c-album-tagline">La montaña lenca</div>
-          </div>
-          <div class="c-album-bottom"><span class="c-album-meta">12 piezas · Masterizado ✓</span></div>
-        </a>
-        <a href="/tambor-de-piedra/raiz-de-tierra.html" class="c-album-card">
-          <div class="c-album-top" style="background:linear-gradient(135deg,rgba(122,59,46,0.14),#f0ede4);">
-            <img class="c-album-thumb" src="thumbs/tp-raiz-de-tierra.jpg" alt="Raíz de Tierra — portada" loading="lazy" width="96" height="96">
-            <div class="c-album-num" style="color:#7a3b2e;">Álbum 03</div>
-            <div class="c-album-title">Raíz de Tierra</div>
-            <div class="c-album-tagline">Las Voces del Silencio · Olancho, 1983</div>
-          </div>
-          <div class="c-album-bottom"><span class="c-album-meta">14 pistas · Masterizado ✓</span></div>
-        </a>
-      </div>
+    </div>
+    <div class="album-cards tp-album-cards">
+      <a href="/tambor-de-piedra/raiz-de-mar.html" class="album-card fade-in">
+        <div class="album-card-img"><img src="thumbs/tp-raiz-de-mar.jpg" alt="Raíz de Mar — portada" loading="lazy" width="400" height="400"></div>
+        <div class="album-card-body">
+          <div class="album-card-num" style="color:#1f6470;">Álbum 01</div>
+          <div class="album-card-title">RAÍZ DE MAR</div>
+          <div class="album-card-meta">Rock progresivo · 11 piezas</div>
+        </div>
+      </a>
+      <a href="/tambor-de-piedra/raiz-de-piedra.html#trova" class="album-card fade-in">
+        <div class="album-card-img"><img src="thumbs/tp-raiz-de-piedra-trova.jpg" alt="Raíz de Piedra · Trova latinoamericana — portada" loading="lazy" width="400" height="400"></div>
+        <div class="album-card-body">
+          <div class="album-card-num" style="color:#6e5b45;">Álbum 02</div>
+          <div class="album-card-title">RAÍZ DE PIEDRA</div>
+          <div class="album-card-meta">Trova latinoamericana · 12 piezas</div>
+        </div>
+      </a>
+      <a href="/tambor-de-piedra/raiz-de-piedra.html#jazz" class="album-card fade-in">
+        <div class="album-card-img"><img src="thumbs/tp-raiz-de-piedra-jazz.jpg" alt="Raíz de Piedra · Jazz de cámara — portada" loading="lazy" width="400" height="400"></div>
+        <div class="album-card-body">
+          <div class="album-card-num" style="color:#6e5b45;">Álbum 03</div>
+          <div class="album-card-title">RAÍZ DE PIEDRA</div>
+          <div class="album-card-meta">Jazz de cámara · 12 piezas</div>
+        </div>
+      </a>
+      <a href="/tambor-de-piedra/raiz-de-tierra.html#folk" class="album-card fade-in">
+        <div class="album-card-img"><img src="thumbs/tp-raiz-de-tierra-folk.jpg" alt="Raíz de Tierra · Trova folk latinoamericano — portada" loading="lazy" width="400" height="400"></div>
+        <div class="album-card-body">
+          <div class="album-card-num" style="color:#7a3b2e;">Álbum 04</div>
+          <div class="album-card-title">RAÍZ DE TIERRA</div>
+          <div class="album-card-meta">Trova folk latinoamericano · 14 pistas</div>
+        </div>
+      </a>
+      <a href="/tambor-de-piedra/raiz-de-tierra.html#rock" class="album-card fade-in">
+        <div class="album-card-img"><img src="thumbs/tp-raiz-de-tierra-rock.jpg" alt="Raíz de Tierra · Rock progresivo temprano — portada" loading="lazy" width="400" height="400"></div>
+        <div class="album-card-body">
+          <div class="album-card-num" style="color:#7a3b2e;">Álbum 05</div>
+          <div class="album-card-title">RAÍZ DE TIERRA</div>
+          <div class="album-card-meta">Rock progresivo temprano · 14 pistas</div>
+        </div>
+      </a>
     </div>
   </div>
 </section>

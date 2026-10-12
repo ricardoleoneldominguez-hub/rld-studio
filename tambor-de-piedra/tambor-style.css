@@ -165,3 +165,7 @@ a.vbtn-letras:hover { background: var(--dark); color: var(--bg); }
   border-style: dashed; color: var(--muted);
   font-family: var(--font-mono); font-size: .62rem; letter-spacing: .2em; text-transform: uppercase; line-height: 1.8;
 }
+
+
+/* Anclas de versión (#trova, #jazz, #folk, #rock) bajo el menú fijo */
+.version[id] { scroll-margin-top: 90px; }
