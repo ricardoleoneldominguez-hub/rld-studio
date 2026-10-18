@@ -88,7 +88,7 @@ nav {
 
 .nav-links a {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--gray);
@@ -186,7 +186,7 @@ nav {
 
 .home-eyebrow {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--accent);
@@ -253,7 +253,7 @@ nav {
 }
 .home-stat-label {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--muted);
@@ -275,7 +275,7 @@ nav {
 }
 .lang-tag {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--verde);
@@ -340,7 +340,7 @@ nav {
 
 .section-label {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--accent);
@@ -406,7 +406,7 @@ nav {
 
 .album-card-num {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.2em;
   color: var(--accent);
   text-transform: uppercase;
@@ -425,7 +425,7 @@ nav {
 
 .album-card-meta {
   font-family: var(--font-mono);
-  font-size: 0.58rem;
+  font-size: 0.6875rem;
   color: var(--muted);
   letter-spacing: 0.06em;
 }
@@ -456,7 +456,7 @@ nav {
 
 .page-chapter {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--accent);
@@ -533,7 +533,7 @@ nav {
 
 .album-gallery-num {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   margin-bottom: 0.3rem;
@@ -570,7 +570,7 @@ nav {
 
 .album-gallery-tag {
   font-family: var(--font-mono);
-  font-size: 0.5rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--gray);
@@ -587,7 +587,7 @@ nav {
 
 .tracks-header {
   font-family: var(--font-mono);
-  font-size: 0.58rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--muted);
@@ -615,7 +615,7 @@ nav {
 
 .track-num {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 0.6875rem;
   color: var(--muted);
   font-weight: 500;
 }
@@ -633,14 +633,14 @@ nav {
 
 .track-info .track-subtitle {
   font-family: var(--font-mono);
-  font-size: 0.62rem;
+  font-size: 0.6875rem;
   color: var(--muted);
   margin-top: 0.15rem;
 }
 
 .track-lang {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.1em;
   color: var(--accent);
   border: 1px solid var(--accent);
@@ -651,7 +651,7 @@ nav {
 
 .track-link {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--dark);
@@ -693,7 +693,7 @@ nav {
   align-items: center;
   gap: 0.5rem;
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--muted);
@@ -718,7 +718,7 @@ nav {
 
 .info-block-label {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--muted);
@@ -743,7 +743,7 @@ nav {
 
 .tag {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--verde);
@@ -825,7 +825,7 @@ footer {
 }
 .footer-platform {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--dark);
@@ -848,7 +848,7 @@ footer {
 
 .footer-sub {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.2em;
   color: var(--gray);
   margin-bottom: 1.5rem;
@@ -863,7 +863,7 @@ footer {
 }
 .footer-links a {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--gray);
@@ -1002,7 +1002,7 @@ footer {
 .album-spotify-text { flex: 1; display: flex; flex-direction: column; gap: 0.2rem; }
 .album-spotify-eyebrow {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: #1DB954;
@@ -1124,7 +1124,7 @@ nav {
 
 .nav-links a {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--gray);
@@ -1222,7 +1222,7 @@ nav {
 
 .home-eyebrow {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--accent);
@@ -1289,7 +1289,7 @@ nav {
 }
 .home-stat-label {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--muted);
@@ -1311,7 +1311,7 @@ nav {
 }
 .lang-tag {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--verde);
@@ -1376,7 +1376,7 @@ nav {
 
 .section-label {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--accent);
@@ -1442,7 +1442,7 @@ nav {
 
 .album-card-num {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.2em;
   color: var(--accent);
   text-transform: uppercase;
@@ -1461,7 +1461,7 @@ nav {
 
 .album-card-meta {
   font-family: var(--font-mono);
-  font-size: 0.58rem;
+  font-size: 0.6875rem;
   color: var(--muted);
   letter-spacing: 0.06em;
 }
@@ -1492,7 +1492,7 @@ nav {
 
 .page-chapter {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--accent);
@@ -1569,7 +1569,7 @@ nav {
 
 .album-gallery-num {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   margin-bottom: 0.3rem;
@@ -1606,7 +1606,7 @@ nav {
 
 .album-gallery-tag {
   font-family: var(--font-mono);
-  font-size: 0.5rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--gray);
@@ -1623,7 +1623,7 @@ nav {
 
 .tracks-header {
   font-family: var(--font-mono);
-  font-size: 0.58rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--muted);
@@ -1651,7 +1651,7 @@ nav {
 
 .track-num {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 0.6875rem;
   color: var(--muted);
   font-weight: 500;
 }
@@ -1669,14 +1669,14 @@ nav {
 
 .track-info .track-subtitle {
   font-family: var(--font-mono);
-  font-size: 0.62rem;
+  font-size: 0.6875rem;
   color: var(--muted);
   margin-top: 0.15rem;
 }
 
 .track-lang {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.1em;
   color: var(--accent);
   border: 1px solid var(--accent);
@@ -1687,7 +1687,7 @@ nav {
 
 .track-link {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--dark);
@@ -1729,7 +1729,7 @@ nav {
   align-items: center;
   gap: 0.5rem;
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--muted);
@@ -1754,7 +1754,7 @@ nav {
 
 .info-block-label {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--muted);
@@ -1779,7 +1779,7 @@ nav {
 
 .tag {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--verde);
@@ -1861,7 +1861,7 @@ footer {
 }
 .footer-platform {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--dark);
@@ -1884,7 +1884,7 @@ footer {
 
 .footer-sub {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.2em;
   color: var(--gray);
   margin-bottom: 1.5rem;
@@ -1899,7 +1899,7 @@ footer {
 }
 .footer-links a {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--gray);
@@ -2038,7 +2038,7 @@ footer {
 .album-spotify-text { flex: 1; display: flex; flex-direction: column; gap: 0.2rem; }
 .album-spotify-eyebrow {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: #1DB954;
@@ -2160,7 +2160,7 @@ nav {
 
 .nav-links a {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--gray);
@@ -2244,7 +2244,7 @@ nav {
 
 .home-eyebrow {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--accent);
@@ -2311,7 +2311,7 @@ nav {
 }
 .home-stat-label {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--muted);
@@ -2333,7 +2333,7 @@ nav {
 }
 .lang-tag {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--verde);
@@ -2398,7 +2398,7 @@ nav {
 
 .section-label {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--accent);
@@ -2464,7 +2464,7 @@ nav {
 
 .album-card-num {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.2em;
   color: var(--accent);
   text-transform: uppercase;
@@ -2483,7 +2483,7 @@ nav {
 
 .album-card-meta {
   font-family: var(--font-mono);
-  font-size: 0.58rem;
+  font-size: 0.6875rem;
   color: var(--muted);
   letter-spacing: 0.06em;
 }
@@ -2514,7 +2514,7 @@ nav {
 
 .page-chapter {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--accent);
@@ -2591,7 +2591,7 @@ nav {
 
 .album-gallery-num {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   margin-bottom: 0.3rem;
@@ -2628,7 +2628,7 @@ nav {
 
 .album-gallery-tag {
   font-family: var(--font-mono);
-  font-size: 0.5rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--gray);
@@ -2645,7 +2645,7 @@ nav {
 
 .tracks-header {
   font-family: var(--font-mono);
-  font-size: 0.58rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--muted);
@@ -2673,7 +2673,7 @@ nav {
 
 .track-num {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 0.6875rem;
   color: var(--muted);
   font-weight: 500;
 }
@@ -2691,14 +2691,14 @@ nav {
 
 .track-info .track-subtitle {
   font-family: var(--font-mono);
-  font-size: 0.62rem;
+  font-size: 0.6875rem;
   color: var(--muted);
   margin-top: 0.15rem;
 }
 
 .track-lang {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.1em;
   color: var(--accent);
   border: 1px solid var(--accent);
@@ -2709,7 +2709,7 @@ nav {
 
 .track-link {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--dark);
@@ -2751,7 +2751,7 @@ nav {
   align-items: center;
   gap: 0.5rem;
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--muted);
@@ -2776,7 +2776,7 @@ nav {
 
 .info-block-label {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--muted);
@@ -2801,7 +2801,7 @@ nav {
 
 .tag {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--verde);
@@ -2883,7 +2883,7 @@ footer {
 }
 .footer-platform {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--dark);
@@ -2906,7 +2906,7 @@ footer {
 
 .footer-sub {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.2em;
   color: var(--gray);
   margin-bottom: 1.5rem;
@@ -2921,7 +2921,7 @@ footer {
 }
 .footer-links a {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--gray);
@@ -3060,7 +3060,7 @@ footer {
 .album-spotify-text { flex: 1; display: flex; flex-direction: column; gap: 0.2rem; }
 .album-spotify-eyebrow {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: #1DB954;
