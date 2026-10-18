@@ -1,0 +1,67 @@
+/* ===================================
+   RLD — Mejoras de legibilidad y móvil (auditoría 18-oct-2026)
+   Se carga al final de cada página, después de nav-menu.css.
+   Solo ajusta tamaños mínimos, áreas táctiles y desbordes; no cambia colores ni fuentes.
+   =================================== */
+
+/* #10 Legibilidad: etiquetas en DM Mono nunca por debajo de 11px */
+.track-num, .track-lang, .track-state, .track-genre, .track-subtitle, .track-link,
+.tracks-header span, .album-gallery-tag, .album-gallery-num,
+.album-card-num, .album-card-meta, .info-block-label, .c-stat-label,
+.home-stat-label, .home-eyebrow, .section-label, .tag, .footer-platform,
+.footer-links a, .sep-text, .cronicas-eyebrow {
+  font-size: max(11px, 0.69rem) !important;
+}
+nav.site-nav .nav-links > li > a,
+nav.site-nav .sub a { font-size: max(12px, 0.78rem); }
+
+/* Imágenes nunca más anchas que su contenedor */
+img { max-width: 100%; height: auto; }
+
+@media (max-width: 768px) {
+  /* #2 Inicio: foto + portada en dos columnas, sin scroll lateral */
+  .home-right {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: .75rem;
+    padding: 1.5rem !important;
+    overflow: hidden !important;
+  }
+  .home-right img {
+    min-width: 0 !important;
+    width: 100%;
+    max-height: none !important;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+  /* #2 Separador «Dos proyectos · Un universo»: puede partirse en dos líneas */
+  .project-separator { gap: 1rem; padding: 1.5rem 1rem; }
+  .sep-text { white-space: normal !important; text-align: center; letter-spacing: .18em; }
+
+  /* Recorrido más corto: portadas en cuadrícula de 2 columnas */
+  .album-cards { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: .9rem !important; }
+  .album-card-body { padding: .75rem .8rem; }
+  .album-card-title { font-size: .85rem; }
+
+  /* #9 Áreas táctiles de al menos 44px */
+  .track-link {
+    display: inline-flex !important;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 .9rem !important;
+  }
+  .footer-platform {
+    display: inline-flex !important;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 .9rem !important;
+  }
+  .footer-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 .5rem;
+  }
+  nav.site-nav .nav-hamburger { min-width: 44px; min-height: 44px; justify-content: center; align-items: center; }
+  .back-link { display: inline-flex; align-items: center; min-height: 44px; }
+}
