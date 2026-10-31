@@ -134,6 +134,9 @@ body.theme-tierra { --accent: #7a3b2e; --ocre: #7a3b2e; --accent2: #a0583f; --oc
 }
 .vbtn-spotify { background: #1DB954; border-color: #128C3E; color: #06210f; box-shadow: 0 2px 0 #128C3E; }
 a.vbtn-spotify:hover { background: #128C3E; border-color: #0d6b2f; color: #fff; }
+
+.vbtn-youtube { background: #ff0000; border-color: #b30000; color: #fff; box-shadow: 0 2px 0 #b30000; }
+a.vbtn-youtube:hover { background: #b30000; border-color: #800000; color: #fff; }
 a.vbtn-letras:hover { background: var(--dark); color: var(--bg); }
 .vbtn.is-off { opacity: .45; cursor: default; }
 
